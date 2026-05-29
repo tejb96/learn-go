@@ -16,7 +16,7 @@ A self-contained, test-driven Go course. Each lesson gives you reading material,
 | **02-interfaces** | Basics, composition, io contracts, type assertions, custom errors |
 | **03-stdlib** | strings/fmt, file I/O, HTTP client, JSON, context |
 | **04-concurrency** | Goroutines, channels, select, sync, patterns |
-| 05-tooling | *(coming soon)* |
+| **05-tooling** | Testing, modules, benchmarks, build tags |
 | 06-projects | *(coming soon)* |
 
 ## Quick start
@@ -87,6 +87,26 @@ Use race detection for this module:
 
 ```bash
 go test -race ./04-concurrency/01-goroutines
+```
+
+Run all tooling lessons from the repo root:
+
+```bash
+go test ./05-tooling/01-testing ./05-tooling/02-modules \
+  ./05-tooling/03-benchmarks ./05-tooling/04-build-flags
+```
+
+Or loop:
+
+```bash
+for d in 05-tooling/*/; do (cd "$d" && go test) || exit 1; done
+```
+
+Build-tags lesson also requires:
+
+```bash
+cd 05-tooling/04-build-flags
+go test -tags=feature -run TestFeatureFlag_Enabled -v
 ```
 
 ## Race detection

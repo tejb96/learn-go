@@ -92,4 +92,4 @@ go func() {
 
 ## Next module
 
-When all concurrency lessons pass, continue to **05-tooling/01-testing** (when published).
+When all concurrency lessons pass, continue to **05-tooling/01-testing**.

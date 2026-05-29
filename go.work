@@ -21,4 +21,9 @@ use (
 	./04-concurrency/03-select
 	./04-concurrency/04-sync
 	./04-concurrency/05-patterns
+	./05-tooling/01-testing
+	./05-tooling/02-modules
+	./05-tooling/02-modules/examples/child
+	./05-tooling/03-benchmarks
+	./05-tooling/04-build-flags
 )
