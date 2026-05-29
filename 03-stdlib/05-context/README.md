@@ -72,4 +72,4 @@ req, _ := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 
 ## Next module
 
-When all stdlib lessons pass, continue to **04-concurrency/01-goroutines** (when published).
+When all stdlib lessons pass, continue to **04-concurrency/01-goroutines**.

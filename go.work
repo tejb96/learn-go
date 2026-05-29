@@ -16,4 +16,9 @@ use (
 	./03-stdlib/03-http-client
 	./03-stdlib/04-json
 	./03-stdlib/05-context
+	./04-concurrency/01-goroutines
+	./04-concurrency/02-channels
+	./04-concurrency/03-select
+	./04-concurrency/04-sync
+	./04-concurrency/05-patterns
 )

@@ -15,7 +15,7 @@ A self-contained, test-driven Go course. Each lesson gives you reading material,
 | **01-foundations** | Variables, functions, errors, slices/maps, structs |
 | **02-interfaces** | Basics, composition, io contracts, type assertions, custom errors |
 | **03-stdlib** | strings/fmt, file I/O, HTTP client, JSON, context |
-| 04-concurrency | *(coming soon)* |
+| **04-concurrency** | Goroutines, channels, select, sync, patterns |
 | 05-tooling | *(coming soon)* |
 | 06-projects | *(coming soon)* |
 
@@ -73,6 +73,20 @@ Or loop:
 
 ```bash
 for d in 03-stdlib/*/; do (cd "$d" && go test) || exit 1; done
+for d in 04-concurrency/*/; do (cd "$d" && go test) || exit 1; done
+```
+
+Run all concurrency lessons from the repo root:
+
+```bash
+go test ./04-concurrency/01-goroutines ./04-concurrency/02-channels \
+  ./04-concurrency/03-select ./04-concurrency/04-sync ./04-concurrency/05-patterns
+```
+
+Use race detection for this module:
+
+```bash
+go test -race ./04-concurrency/01-goroutines
 ```
 
 ## Race detection
