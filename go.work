@@ -11,4 +11,9 @@ use (
 	./02-interfaces/03-io-contracts
 	./02-interfaces/04-type-assertions
 	./02-interfaces/05-custom-errors
+	./03-stdlib/01-strings-fmt
+	./03-stdlib/02-file-io
+	./03-stdlib/03-http-client
+	./03-stdlib/04-json
+	./03-stdlib/05-context
 )

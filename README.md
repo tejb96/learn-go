@@ -14,7 +14,7 @@ A self-contained, test-driven Go course. Each lesson gives you reading material,
 |--------|--------|
 | **01-foundations** | Variables, functions, errors, slices/maps, structs |
 | **02-interfaces** | Basics, composition, io contracts, type assertions, custom errors |
-| 03-stdlib | *(coming soon)* |
+| **03-stdlib** | strings/fmt, file I/O, HTTP client, JSON, context |
 | 04-concurrency | *(coming soon)* |
 | 05-tooling | *(coming soon)* |
 | 06-projects | *(coming soon)* |
@@ -60,6 +60,19 @@ Run all interface lessons from the repo root:
 go test ./02-interfaces/01-basics ./02-interfaces/02-composition \
   ./02-interfaces/03-io-contracts ./02-interfaces/04-type-assertions \
   ./02-interfaces/05-custom-errors
+```
+
+Run all stdlib lessons from the repo root:
+
+```bash
+go test ./03-stdlib/01-strings-fmt ./03-stdlib/02-file-io \
+  ./03-stdlib/03-http-client ./03-stdlib/04-json ./03-stdlib/05-context
+```
+
+Or loop:
+
+```bash
+for d in 03-stdlib/*/; do (cd "$d" && go test) || exit 1; done
 ```
 
 ## Race detection

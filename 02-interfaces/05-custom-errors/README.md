@@ -98,4 +98,4 @@ func NewOpError(op string, err error) error {
 
 ## Next module
 
-When all interface lessons pass, continue to **03-stdlib** (when published).
+When all interface lessons pass, continue to **03-stdlib/01-strings-fmt**.
