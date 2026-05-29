@@ -17,7 +17,7 @@ A self-contained, test-driven Go course. Each lesson gives you reading material,
 | **03-stdlib** | strings/fmt, file I/O, HTTP client, JSON, context |
 | **04-concurrency** | Goroutines, channels, select, sync, patterns |
 | **05-tooling** | Testing, modules, benchmarks, build tags |
-| 06-projects | *(coming soon)* |
+| **06-projects** | CLI log parser, REST API, worker pool, capstone ideas |
 
 ## Quick start
 
@@ -107,6 +107,12 @@ Build-tags lesson also requires:
 ```bash
 cd 05-tooling/04-build-flags
 go test -tags=feature -run TestFeatureFlag_Enabled -v
+```
+
+Run all project lessons from the repo root:
+
+```bash
+go test ./06-projects/01-cli-tool ./06-projects/02-rest-api ./06-projects/03-worker-pool
 ```
 
 ## Race detection

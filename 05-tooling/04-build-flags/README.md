@@ -74,4 +74,4 @@ go build -tags=feature .
 
 ## Next module
 
-When all tooling lessons pass, continue to **06-projects/01-cli-tool** (when published).
+When all tooling lessons pass, continue to **06-projects/01-cli-tool**.

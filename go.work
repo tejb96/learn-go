@@ -26,4 +26,7 @@ use (
 	./05-tooling/02-modules/examples/child
 	./05-tooling/03-benchmarks
 	./05-tooling/04-build-flags
+	./06-projects/01-cli-tool
+	./06-projects/02-rest-api
+	./06-projects/03-worker-pool
 )
