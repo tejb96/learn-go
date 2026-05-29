@@ -92,4 +92,4 @@ func NewRectangle(w, h float64) (*Rectangle, error) {
 
 ## Next module
 
-When all foundation lessons pass, continue to **02-interfaces** (when published).
+When all foundation lessons pass, continue to **02-interfaces/01-basics**.

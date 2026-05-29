@@ -13,7 +13,7 @@ A self-contained, test-driven Go course. Each lesson gives you reading material,
 | Module | Topics |
 |--------|--------|
 | **01-foundations** | Variables, functions, errors, slices/maps, structs |
-| 02-interfaces | *(coming soon)* |
+| **02-interfaces** | Basics, composition, io contracts, type assertions, custom errors |
 | 03-stdlib | *(coming soon)* |
 | 04-concurrency | *(coming soon)* |
 | 05-tooling | *(coming soon)* |
@@ -47,10 +47,19 @@ go test ./01-foundations/01-variables ./01-foundations/02-functions \
   ./01-foundations/05-structs-methods
 ```
 
-Or loop over every lesson:
+Or loop over every lesson in a module:
 
 ```bash
 for d in 01-foundations/*/; do (cd "$d" && go test) || exit 1; done
+for d in 02-interfaces/*/; do (cd "$d" && go test) || exit 1; done
+```
+
+Run all interface lessons from the repo root:
+
+```bash
+go test ./02-interfaces/01-basics ./02-interfaces/02-composition \
+  ./02-interfaces/03-io-contracts ./02-interfaces/04-type-assertions \
+  ./02-interfaces/05-custom-errors
 ```
 
 ## Race detection

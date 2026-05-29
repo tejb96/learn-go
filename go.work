@@ -6,4 +6,9 @@ use (
 	./01-foundations/03-errors
 	./01-foundations/04-slices-maps
 	./01-foundations/05-structs-methods
+	./02-interfaces/01-basics
+	./02-interfaces/02-composition
+	./02-interfaces/03-io-contracts
+	./02-interfaces/04-type-assertions
+	./02-interfaces/05-custom-errors
 )
