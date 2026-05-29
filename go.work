@@ -1,0 +1,9 @@
+go 1.22
+
+use (
+	./01-foundations/01-variables
+	./01-foundations/02-functions
+	./01-foundations/03-errors
+	./01-foundations/04-slices-maps
+	./01-foundations/05-structs-methods
+)
